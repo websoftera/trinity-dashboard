@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRINITY CHATBOT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <!-- Chatbot Floating Button -->
+    <div id="chatbot-icon" onclick="toggleChat()">
+        💬
+    </div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot">
+        <div id="chat-header">
+            <img src="logo.png" alt="School Logo" class="logo">
+            <span>TRINITY CHATBOT</span>
+        <div id="chatbot-cancel">
+            <button onclick="toggleChat()">✖</button>
+          </div>
+
+        </div>
+        <div id="chat-body">
+            <div class="bot-message">
+                <span>Hi, TINKU this side. How can I help you? 😀<br><br>Welcome to Trinity International School! We believe in the vision of VIKSIT BHARAT</span>
+            </div>
+        </div>
+        <div id="chat-footer">
+            <input type="text" id="user-input" placeholder="Say Something you..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
